@@ -7,8 +7,20 @@ package game;
 
 /**
  *
- * @author AcerPC
+ * @author Edor Kacerja
  */
-public class Response {
+public abstract class Response {
+    int playerNumber;
+    int numberOfPlayers;
+    Player[] playersArray;
+    
+    public Response(Player[] playersArray, int playerNumber, int numberOfPlayers){
+        this.playerNumber = playerNumber;
+        this.numberOfPlayers = numberOfPlayers;
+        this.playersArray = playersArray;
+    }
+    
+    
+    public abstract int changeInPosition();
     
 }

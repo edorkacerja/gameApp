@@ -9,6 +9,15 @@ package game;
  *
  * @author AcerPC
  */
-public class ResponseTwo {
+public class ResponseTwo extends Response{
+
+    public ResponseTwo(Player[] playersArray, int playerNumber, int numberOfPlayers) {
+        super(playersArray, playerNumber, numberOfPlayers);
+    }
+
+    @Override
+    public int changeInPosition() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
