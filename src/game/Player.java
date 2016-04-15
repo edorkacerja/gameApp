@@ -24,14 +24,18 @@ public class Player {
     
     
     
-    Response responseTypeOne = new ResponseOne(players, playerNumber, numberOfPlayers);
-    Response responseTypeTwo = new ResponseOne(players, playerNumber, numberOfPlayers);
-    Response responseTypeThree = new ResponseOne(players, playerNumber, numberOfPlayers);
+    Response responseTypeOne;
+    Response responseTypeTwo;
+    Response responseTypeThree;
     
     
     public Player(int PlayerID, Player[] players){
         this.playerNumber = PlayerID;
         this.players = players;
+        
+        responseTypeOne = new ResponseOne(players, playerNumber, numberOfPlayers);
+        responseTypeTwo = new ResponseOne(players, playerNumber, numberOfPlayers);
+        responseTypeThree = new ResponseOne(players, playerNumber, numberOfPlayers);
     }
     
     public void assignResponseMoves(){
@@ -80,6 +84,7 @@ public class Player {
         int change = responseType.changeInPosition(dice);
         positionNumber += change;
         responseMovesLeft--;
+        printPlayerCurrentPosition();
     }
     
     

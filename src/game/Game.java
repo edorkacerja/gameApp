@@ -22,9 +22,9 @@ public class Game {
         }
         
         playersArray[1] = new Player(1, playersArray);
-        playersArray[2] = new Player(1, playersArray);
-        playersArray[3] = new Player(1, playersArray);
-        playersArray[4] = new Player(1, playersArray);
+        playersArray[2] = new Player(2, playersArray);
+        playersArray[3] = new Player(3, playersArray);
+        playersArray[4] = new Player(4, playersArray);
         
     }
     
@@ -48,5 +48,6 @@ public class Game {
         edorsGame.play();
 
     }
-    
+
+
 }
