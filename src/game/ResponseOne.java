@@ -16,8 +16,16 @@ public class ResponseOne extends Response{
     }
 
     @Override
-    public int changeInPosition() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int changeInPosition(int diceNumber) {
+        //int leadingPlayerPosition = playersArray[1].getPosition();
+        //for(int i=2; i<=numberOfPlayers; i++){
+            //if(leadingPlayerPosition < playersArray[i].getPosition()){
+                //leadingPlayerPosition = playersArray[i].getPosition();
+            //}
+        //}
+        
+//        int changeNumber diceNumber + (leadingPlayerPosition - playersArray[playerNumber].getPosition())/2;
+//        return (dieNumber>2) ? changeNumber : -changeNumber;
     }
     
 }

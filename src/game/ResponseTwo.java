@@ -16,8 +16,12 @@ public class ResponseTwo extends Response{
     }
 
     @Override
-    public int changeInPosition() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int changeInPosition(int diceNumber) {
+        
+        int changeNumber = diceNumber;
+        
+        return (diceNumber % 2 == 0) ? changeNumber *3 : changeNumber;
+        
     }
     
 }

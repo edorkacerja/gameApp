@@ -21,6 +21,6 @@ public abstract class Response {
     }
     
     
-    public abstract int changeInPosition();
+    public abstract int changeInPosition(int diceNumber);
     
 }
